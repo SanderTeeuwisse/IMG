@@ -12,14 +12,14 @@
    - Daarbij op dezelfde plafondwaarde uit te komen.
    - Bij overdracht van weg van ene partij naar andere partij bij herberekening op zelfde 
    - Vanuit de opdrachtgever is deze ambitie er niet
-- Het IMG mag groter zijn dan wat wettelijk als nodig wordt verondersteld. Het datamodel moet Nederlandbreed geluid ondersteunen. 
-- [*Beslispunt*] Voor de European Noise Directive (END), die over 3 jaar in werking treedt, is overdracht in brede zin nodig. Het is wenselijk om hierop voor te sorteren. De opdrachtgever heeft aangegeven dat compliancy met END buiten de scope valt. Houdt rekening met het brede plaatje. Over 3 jaar moet je geluidskaarten kunnen produceren. Het IMG zou hiervoor dan wel de faciliteiten moeten kunnen bieden. De END zit nu niet in de scope, maar het is de wens van de stakeholders dat het datamodel wel zo ontwikkeld wordt dat je voorsorteert op END.
-- [*Specificeren*] Voor alle onderdelen, waneer is dat gestart en waneer eindigt het, de juridisch geldige situatie (besluit), voor dat besluit ook aangeven wat de peildatum van de brondata voor dat besluit is.
+   - Het IMG mag groter zijn dan wat wettelijk als nodig wordt verondersteld. Het datamodel moet Nederlandbreed geluid ondersteunen. ook hier is nog niet over besloten.
+- [*Beslispunt*] Voor de European Noise Directive (END), die over 3 jaar in werking treedt, is overdracht in brede zin nodig. Het is wenselijk om hierop voor te sorteren. De opdrachtgever heeft aangegeven dat compliancy met END buiten de scope valt. Houdt rekening met het brede plaatje. Over 3 jaar moet je geluidskaarten kunnen produceren. Het IMG zou hiervoor dan wel de faciliteiten moeten kunnen bieden. De END zit nu niet in de scope, maar het is de wens van de stakeholders dat het datamodel wel zo ontwikkeld wordt dat je voorsorteert op END. Voorbereiden op END gaat een (heel) stap verder dan het kunnen herberekenen van GPP's. Het voorgaande is vooral het beeld van RWS. Het zou goed zijn om na te gaan wat het opnemen van de END-eisen betekent voor het IMG.
+- [*Specificeren*] Voor alle onderdelen, wanneer is dat gestart en wanneer eindigt het, de juridisch geldige situatie (besluit), voor dat besluit ook aangeven wat de peildatum van de brondata voor dat besluit is.
 - In model de relatie meenemen, maar hoeft niet in de voorziening te worden opgenomen. Je zou ook nog optioneel een relatie naar (bijv.) BGT-wegdeel. 
 - Doel is ook om bronhouders zoveel mogelijk te ontlasten. 
-- Tegelijk qua kwaliteit: wel heel goed te zien hoe goed iets gemapped is met anders modellen.
+- Tegelijk qua kwaliteit: wel heel goed te zien hoe goed iets gemapped is met anders modellen. sorry ik begrijp niet goed wat met 'gemapped' wordt bedoeld.
 - Rond wegen bestaat veel dubbele registratie: voorkomen in IMG, sluit aan bij bestaande bronnen/ontwikkelingen
-- Handhaven van de vrijheid voor het plaatsen van de rijlijnen (omdat aan harmoniseren kosten verbonden zijn)
+- Handhaven van de vrijheid voor het plaatsen van de rijlijnen (omdat aan harmoniseren kosten verbonden zijn). IMG definieert wat een rijlijn is, niet hoe tot de ligging van de rijlijn is gekomen of hoeveel per wegvak gehanteerd worden.
 
 ### Geluidrelevante objecten
 > *Eventueel later opsplitsen naar* ***bron***, ***overdracht*** *en* ***omgeving***.
@@ -34,7 +34,7 @@
 - Binnen het begrip **snelheid** duidelijk onderscheid maken tussen:
     - [1] wat mag er maximaal gereden worden
     - [2] daadwerkelijk gereden snelheid
-- [*Beslispunt*] Er is nog geen concensus over het bronbestand voor wegen.  Enerzijds is er voorkeur voor het **NWB als standaard** voor wegen, mede omdat er al onderzoek is gedaan naar het geluid-compliant maken NWB). Tegelijkertijd is **NWB nog niet voor alle partijen goed bruikbaar als bron**
+- [*Beslispunt*] Er is nog geen concensus over het bronbestand voor wegen.  Enerzijds is er voorkeur voor het **NWB als standaard** voor wegen, mede omdat er al onderzoek is gedaan naar het geluid-compliant maken NWB). Tegelijkertijd is **NWB nog niet voor alle partijen goed bruikbaar als bron** [ST] is dit een beslispunt binnen de CVGG? Naar mijn idee is iedere bronhouder zelf verantwoordelijk hoe hij/zij de ligging van de lijnbronnen bepaald. Dit mag NWB zijn maar is niet noodzakelijk. Richting de toekomst wellicht wenselijk, maar is nu (nog) geen uitgangspunt.
 - [*Specificeren*] Het IMG legt niet op hoe je om moet gaan met rijlijnen. Het rekenmodel zelf zal bepalende factor zijn voor omgang rijlijnen.
 - In IMG kunnen zien hoe rijlijnen **samenhangen met andere datasets**
 - De **breedte** van de weg hoort niet bij de rijlijn, maar bij het wegvak.
@@ -48,7 +48,7 @@
    - **1a** Kerngegevens v/d bron (nodig voor GPP)
    - **1b** Aanvullende gegevens v/d bron (bijv. kruispunt-, obstakel-, hellings(hoek)correctie en breedte van de weg) (voor berekening woningbelasting heb je dit nodig) 
    - **2a** Kerngegevens overdracht (nodig voor GPP)  
-   - **2b** Aanvullende gegevens overdracht (Als je een GPP-overschrijding hebt, moet je naar de resterende overdrachtsdata kijken)
+   - **2b** Aanvullende gegevens overdracht (Als je een GPP-overschrijding hebt, moet je naar de resterende overdrachtsdata kijken) [ST] dit kan evt. bij het IMG worden betrokken, mits het we daar mee niet te veel hooi op de vork nemen. Lijkt mij een uitzoekpunt.
    - **3a** Kerngegevens omgeving (nodig voor GPP, bijv. afschermende objecten)
 - De **hoogteligging** van een referentiepunt, moet vooral representatief zijn. De voorkeur gaat daarom uit naar absolute hoogte in aantal meters boven N.A.P. Na vaststelling referentiepunt en hoogte boven maaiveld is het voorstel om de hoogte om te zetten naar een absolute hoogte (hoogte boven NAP).
 - [*Specificeren*] De **hellingshoek** van een wegvak/rijlijn is voor GPP's een constante (0), en dient niet in het model te worden opgenomen. Voor overdracht is hellingshoek wel relevant! (*Opname in het model hangt af van de uiteindelijke scope*)
@@ -80,7 +80,7 @@
 - In beginsel elk object van begin- en einddatum voorzien
 
 ### Tijd
-- Nu in geluidregister: oude waarde verdwijnt acuut, door rechter gecorrigeerd, nu telkens afgelopen 5 jaar terugkijken (peildatum 31 december).
+- Nu in geluidregister: oude waarde verdwijnt acuut (wel opvraagbaar bij RWS), door rechter aangegeven dat dit niet correct is, in systeem dat RWS nu ontwikkelt wordt het  mogelijk om afgelopen 5 jaar terugkijken (peildatum 31 december).
 - Het moet mogelijk zijn om te kunnen tijdrijzen in het systeem (o.b.v. uitspraak rechter)
 - Het geluidsregister bevat ook objecten met een datum in de toekomst (bijv. nieuwe wegen).
 - Modelleer je de aanleverdatum van aangeleverde data ook mee in het model?
